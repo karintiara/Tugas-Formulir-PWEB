@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum TI Jember</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="logo.png" alt="logo Forum TI" width="150px"></td>
+            <td>
+                <h1>
+                    DATA KEPENGURUSAN TAHUN 2024/2025 <br>
+                    FORUM TI JEMBER
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <form action="#" class="form">
+        <h2>Data Pengurus</h2>
+        <table>
+            <tr>
+              <td><label for="nama">Nama Lengkap</label></td>
+              <td><input type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td><input type="number" placeholder="Masukkan NIM" name="nim" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="nohp">Nomor HP</label></td>
+                <td><input type="number" placeholder="Masukkan Nomor HP" name="nohp" id="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Jenis kelamin</label></td>
+                <td><input type="radio" name="gender" id="gender" value="L">Laki-laki
+                    <input type="radio" name="gender" id="gender" value="P">Perempuan</td>
+            </tr>
+            <tr>
+                <td><label for="lahir">Tanggal Lahir</label></td>
+                <td><input type="date" name="lahir" id="lahir"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat Rumah</label></td>
+                <td><textarea placeholder="Masukkan Alamat Rumah" name="alamat" placeholder="Masukkan Nama Lengkap" id="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="alamat jember">Alamat Domisili Jember</label></td>
+                <td><textarea placeholder="Masukkan Alamat Domisili Jember" name="alamat jember" id="alamat jember"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="divisi">Divisi</label></td>
+                <td><select name="divisi" id="divisi">
+                      <option value="a">BPH</option>
+                      <option value="b">Litbang</option>
+                      <option value="c">Humas</option>
+                      <option value="d">PSDM</option>
+                      <option value="e">Mediatek</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="himpunan">Asal Himpunan</label></td>
+                <td><input type="radio" name="himpunan" id="himpunan" value="HIMATIF">HIMATIF
+                    <input type="radio" name="himpunan" id="himpunan" value="HMJTI">HMJTI
+                    <input type="radio" name="himpunan" id="himpunan" value="HUMANIKA">HUMANIKA
+                </td>
+            </tr>
+            <tr>
+                <td><label for="foto">Foto</label></td>
+                <td><input type="file" name="foto" id="foto" size="10"></td>
+            </tr>          
+        </table>
+        <input type="submit" value=" Kirim ">
+        <input type="reset" value="Reset">
+    </form>
+    <br>
+    <table border="1">
+        <h2>Rekap Data Pengurus</h2>
+        <tr>
+            <th>Nama Lengkap</th>
+            <th>NIM</th>
+            <th>Nomor HP</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat Rumah</th>
+            <th>Alamat Domisili Jember</th>
+            <th>Divisi</th>
+            <th>Asal Himpunan</th>
+            <th>foto</th>
+        </tr>
+    </table>
+</body>
+</html>
