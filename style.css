@@ -1,35 +1,44 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #EEEEEE;
-    color: #201E43;
 }
-table {
+.header-table {
+    width: 90%;
+    max-width: 950px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+h1 {
+    text-align: center;
+    color: #134B70;
+    font-weight: bolder;
+}
+form h2 {
+    background-color: #134B70;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+.form-table {
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
     border-collapse: collapse;
 }
-table img {
-    display: block;
-}
-h1, h2 {
-    text-align: center;
-    color: #134B70;
-}
-h2 {
-    margin-top: 20px;
-}
 form {
     width: 100%;
-    max-width: 800px;
+    max-width: 700px; 
     margin: 20px auto;
     background-color: #FFF;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    color: #134B70;
 }
 table input, table textarea, table select {
     width: 100%;
@@ -37,17 +46,23 @@ table input, table textarea, table select {
     margin: 5px 0;
     border: 1px solid #508C9B;
     border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+.radio-gender {
+    width: 50%;
+    display: inline-flex;
+}
+.radio-himpunan {
+    width: 80%;
+    display: inline-flex;
 }
 table textarea {
     resize: vertical;
 }
 table label {
-    display: block;
+    display: inline;
     margin-bottom: 5px;
     font-weight: bold;
-}
-table tr {
-    margin-bottom: 10px;
 }
 input[type="submit"], input[type="reset"] {
     width: 48%;
@@ -60,34 +75,39 @@ input[type="submit"], input[type="reset"] {
     margin-top: 10px;
 }
 input[type="reset"] {
-    background-color: #ffa8a8;
+    background-color: #464646;
 }
 input[type="submit"]:hover {
     background-color: #201E43;
 }
 input[type="reset"]:hover {
-    background-color: #4e4e4e;
+    background-color: #242424;
 }
-table.rekap {
-    width: 100%;
+.rekap-table {
+    width: 90%;
     border-collapse: collapse;
     margin: 20px auto;
     background-color: #FFF;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-table.rekap th, table.rekap td {
+table.rekap-table h2 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: bolder;
+}
+table.rekap-table th, table.rekap-table td {
     padding: 10px;
     border: 1px solid #508C9B;
     text-align: left;
 }
-table.rekap th {
+
+table.rekap-table th {
     background-color: #134B70;
     color: #fff;
+    text-align: center;
 }
-table.rekap tr:nth-child(even) {
-    background-color: #EEEEEE;
-}
-table.rekap tr:hover {
+
+table.rekap-table tr:hover {
     background-color: #508C9B;
     color: #fff;
 }

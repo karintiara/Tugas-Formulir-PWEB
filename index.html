@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
+    <table class="header-table">
         <tr>
             <td><img src="logo.png" alt="logo Forum TI" width="150px"></td>
             <td>
@@ -16,27 +16,28 @@
                     FORUM TI JEMBER
                 </h1>
             </td>
+            <td><img src="logo.png" alt="logo Forum TI" width="150px"></td>
         </tr>
     </table>
-    <form action="#" class="form">
+    <form action="#">
         <h2>Formulir Data Pengurus</h2>
-        <table>
+        <table class="form-table">
             <tr>
-              <td><label for="nama">Nama Lengkap</label></td>
-              <td><input type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama"></td>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td><input type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama"></td>
             </tr>
             <tr>
                 <td><label for="nim">NIM</label></td>
-                <td><input type="number" placeholder="Masukkan NIM" name="nim" id="nim"></td> 
+                <td><input type="text" placeholder="Masukkan NIM" name="nim" id="nim"></td> 
             </tr>
             <tr>
                 <td><label for="nohp">Nomor HP</label></td>
-                <td><input type="number" placeholder="Masukkan Nomor HP" name="nohp" id="nohp"></td> 
+                <td><input type="text" placeholder="Masukkan Nomor HP" name="nohp" id="nohp"></td> 
             </tr>
             <tr>
-                <td><label for="gender-l">Jenis kelamin</label></td> 
-                <td><input type="radio" name="gender" id="gender-l" value="L">Laki-laki
-                    <input type="radio" name="gender" id="gender-p" value="P">Perempuan</td> 
+                <td><label for="gender">Jenis kelamin</label></td> 
+                <td class="radio-gender"><input type="radio" name="gender" id="gender-p" value="Pria">Pria
+                    <input type="radio" name="gender" id="gender-w" value="Wanita">Wanita</td> 
             </tr>
             <tr>
                 <td><label for="lahir">Tanggal Lahir</label></td>
@@ -53,19 +54,19 @@
             <tr>
                 <td><label for="divisi">Divisi</label></td>
                 <td><select name="divisi" id="divisi">
-                      <option value="a">BPH</option>
-                      <option value="b">Litbang</option>
-                      <option value="c">Humas</option>
-                      <option value="d">PSDM</option>
-                      <option value="e">Mediatek</option>
+                    <option value="BPH">BPH</option>
+                    <option value="Litbang">Litbang</option>
+                    <option value="Humas">Humas</option>
+                    <option value="PSDM">PSDM</option>
+                    <option value="Mediatek">Mediatek</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td><label for="himpunan-himat">Asal Himpunan</label></td> 
-                <td><input type="radio" name="himpunan" id="himpunan-himat" value="HIMATIF">HIMATIF
+                <td><label for="himpunan">Asal Himpunan</label></td> 
+                <td class="radio-himpunan"><input type="radio" name="himpunan" id="himpunan-himatif" value="HIMATIF">HIMATIF
                     <input type="radio" name="himpunan" id="himpunan-hmjti" value="HMJTI">HMJTI 
-                    <input type="radio" name="himpunan" id="himpunan-human" value="HUMANIKA">HUMANIKA 
+                    <input type="radio" name="himpunan" id="himpunan-humanika" value="HUMANIKA">HUMANIKA 
                 </td>
             </tr>
             <tr>
@@ -73,26 +74,62 @@
                 <td><input type="file" name="foto" id="foto" size="10"></td>
             </tr>          
         </table> <br>
-        <input type="submit" value="Kirim">
         <input type="reset" value="Reset">
+        <input type="submit" value="Kirim">
     </form>
     <br>
-    <form action="#">
-        <table border="1">
-            <h2>Rekap Data Pengurus</h2>
-            <tr>
-                <th>Nama Lengkap</th>
-                <th>NIM</th>
-                <th>Nomor HP</th>
-                <th>Jenis Kelamin</th>
-                <th>Tanggal Lahir</th>
-                <th>Alamat Rumah</th>
-                <th>Alamat Domisili Jember</th>
-                <th>Divisi</th>
-                <th>Asal Himpunan</th>
-                <th>Foto</th>
-            </tr>
-        </table>
-    </form>
+    <table class="rekap-table">
+        <tr>
+            <th colspan="10"><h2>Rekap Data Pengurus</h2></th>
+        </tr>
+        <tr>
+            <th>Nama Lengkap</th>
+            <th>NIM</th>
+            <th>Nomor HP</th>
+            <th>Jenis Kelamin</th>
+            <th>Tanggal Lahir</th>
+            <th>Alamat Rumah</th>
+            <th>Alamat Domisili Jember</th>
+            <th>Divisi</th>
+            <th>Asal Himpunan</th>
+            <th>Foto</th>
+        </tr>
+        <tr>
+            <td>Karin Tiara Rahmadina</td>
+            <td>232410102061</td>
+            <td>081234567890</td>
+            <td>Wanita</td>
+            <td>06/08/2005</td>
+            <td>Rumah, Bogor</td>
+            <td>Rumah, Jember</td>
+            <td>Litbang</td>
+            <td>HIMATIF</td>
+            <td>Foto.jpg</td>
+        </tr>
+        <tr>
+            <td>Karin Tiara Rahmadina</td>
+            <td>232410102061</td>
+            <td>081234567890</td>
+            <td>Wanita</td>
+            <td>06/08/2005</td>
+            <td>Rumah, Bogor</td>
+            <td>Rumah, Jember</td>
+            <td>Litbang</td>
+            <td>HIMATIF</td>
+            <td>Foto.jpg</td>
+        </tr>
+        <tr>
+            <td>Karin Tiara Rahmadina</td>
+            <td>232410102061</td>
+            <td>081234567890</td>
+            <td>Wanita</td>
+            <td>06/08/2005</td>
+            <td>Rumah, Bogor</td>
+            <td>Rumah, Jember</td>
+            <td>Litbang</td>
+            <td>HIMATIF</td>
+            <td>Foto.jpg</td>
+        </tr>
+    </table>
 </body>
 </html>
